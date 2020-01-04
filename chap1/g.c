@@ -7,7 +7,6 @@ int main()
     int five_digit_num;
     printf("Enter a five digit number: ");
     scanf("%d",&five_digit_num);
-    //int number_of_digits = digi_counter(five_digit_num);
     if(digi_counter(five_digit_num) != 5)
     {
         printf("Not a five digit number.");
