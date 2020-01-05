@@ -30,6 +30,8 @@ int reverse_digits(int number)
     while(number != 0)
     {
         reverse = (reverse * 10) + (number % 10);
+    
+    number /= 10;
     }
     return reverse;
 }
