@@ -11,7 +11,7 @@ int main()
         printf("Not a 4 digit number\n");
         return 0;
     }
-    int *digits = digi_array(four_digit_number,4);
+    int *digits = digi_array(four_digit_number,4); // digi_array method returns the digits of number in an array
     printf("Sum of first and last digit: %d\n",digits[0] + digits[3]);
     return 0;
 }
