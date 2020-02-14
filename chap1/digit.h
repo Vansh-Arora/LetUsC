@@ -46,12 +46,12 @@ int reverse_digits(int number)
 int* digi_array(int number, int n)
 {
     int *digits = (int*)malloc(n * sizeof(int));
-    int i = 0;
+    int i = n-1;
     while(number != 0)
     {
         digits[i] = number % 10;
         number /= 10;
-        i += 1;
+        i--;
     }
     return digits;
 }
