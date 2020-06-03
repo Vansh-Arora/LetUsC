@@ -16,9 +16,9 @@ int main()
     printf("Enter radius of circle\n");
     scanf("%d",&radius);
     printf("Enter co-ordinates of point\n");
-    scanf("%d",&point[0],&point[1]);
+    scanf("%d%d",&point[0],&point[1]);
     
-    distance = ( pow((point[1] - center[1]),2) ) + ( pow((point[0] - centre[0]),2) );
+    distance = sqrt(( pow((point[1] - centre[1]),2) ) + ( pow((point[0] - centre[0]),2) ));
 
     if( distance == radius )
         printf("Point lies on the circle.");
